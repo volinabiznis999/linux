@@ -7,6 +7,7 @@ NOCOLOR="\033[0m"
 echo
 
 echo -e "[1] ${GREEN}pre-configuring packages${NOCOLOR}"
+sudo hostnamectl set-hostname volinaVPS
 sudo dpkg --configure -a
 
 echo
