@@ -38,10 +38,11 @@ sudo apt install default-jre -y
 echo
 
 echo -e "[5] ${GREEN}installing node.js${NOCOLOR}"
-sudo apt install nodejs -y
-sudo apt install npm -y
-npm install
-npm install discord.js
+sudo apt install ffmpeg
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt -y install nodejs
+sudo apt -y  install gcc g++ make
 
 echo -e "[6] ${GREEN}installing final packages${NOCOLOR}"
 sudo apt-get upgrade zip unzip screen -y
