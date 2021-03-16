@@ -35,6 +35,14 @@ echo
 echo -e "[5] ${GREEN}installing java 11${NOCOLOR}"
 sudo apt install default-jre -y
 
+echo
+
+echo -e "[5] ${GREEN}installing node.js${NOCOLOR}"
+sudo apt install nodejs -y
+sudo apt install npm -y
+npm install
+npm install discord.js
+
 echo -e "[6] ${GREEN}installing final packages${NOCOLOR}"
 sudo apt-get upgrade zip unzip screen -y
 clear
